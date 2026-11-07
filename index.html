@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102720">
+  <meta name="description" content="欢迎来到黑童话世界。小红帽给狼量衣服，匹诺曹在门口炸街，灰姑娘开着南瓜黑车。沿着森林路串串门，去掉毛酒馆听一首。">
+  <meta property="og:title" content="黑童话世界｜童话书没写的，邻居都知道">
+  <meta property="og:description" content="各家的童话都挤在一片大黑森林。门一开，故事就串了。">
+  <meta property="og:image" content="assets/p02-world-ensemble-poster-v03.jpg">
+  <title>黑童话世界｜童话书没写的，邻居都知道</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102720'/%3E%3Cpath d='M15 52C13 27 29 8 53 10c-2 24-18 38-38 42ZM15 52l28-30M26 40l-1-15m1 15 15-1' fill='none' stroke='%23d8b979' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/p01-world-hero-banner-v03.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="content.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <svg class="svg-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-feather" viewBox="0 0 32 32"><path d="M7 27C5 14 14 4 27 5c-1 13-10 20-20 22Zm0 0L23 9M13 20l-1-9m1 9 9-1"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="m12 5-5 4H3v6h4l5 4Zm4 3a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 6-7 12-7 12S5 16 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+  </svg>
+  <a class="skip-link" href="#forest">跳到森林地图</a>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="黑童话世界，回到林口">
+      <svg aria-hidden="true"><use href="#i-feather"/></svg>
+      <span><strong>黑童话世界</strong><small>DARK FAIRYTALES</small></span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主导航">
+      <a href="#forest">逛逛森林</a><a href="#residents">认识邻居</a><a href="#tavern">掉毛酒馆</a><a href="#rumors">林间传闻</a>
+    </nav>
+    <button class="header-tavern" data-open-tavern><span class="live-dot"></span>酒馆开门了<svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    <button class="menu-toggle icon-button" id="menuToggle" aria-label="打开导航" aria-controls="mainNav" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <img class="hero-art" src="assets/p01-world-hero-banner-v03.jpg" alt="同一片大黑森林里，木屋、旧矿、南瓜车、掉毛酒馆和金色城堡由小路相连" fetchpriority="high" width="1672" height="941">
+      <div class="hero-shade"></div><div class="fireflies" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span>童话书没写的，邻居都知道</p>
+        <h1 id="heroTitle"><span>黑童话</span><span class="hero-title-last">世界<span class="title-star" aria-hidden="true">✦</span></span></h1>
+        <p class="hero-intro">小红帽给狼量衣服，匹诺曹在门口炸街。<br>故事各过各的，麻烦都是串门串出来的。</p>
+        <div class="hero-actions"><a class="button button-gold" href="#forest">进林子逛逛<svg aria-hidden="true"><use href="#i-arrow"/></svg></a><button class="button button-quiet" data-open-tavern>先去酒馆听一首</button></div>
+      </div>
+      <div class="hero-note"><span class="note-seal">林口<br>告示</span><p>熟人也别太放心。<br><small>尤其是戴着外婆帽的那位。</small></p></div>
+      <a class="scroll-cue" href="#forest"><span>沿着小路，往里走</span><span class="scroll-line"></span></a>
+      <div class="hero-page-number" aria-hidden="true">故事，从隔壁开始。<span>序 · 林口</span></div>
+    </section>
+
+    <section class="forest-section section" id="forest" aria-labelledby="forestTitle">
+      <div class="chapter-heading reveal"><p class="eyebrow">第一章 · 推开各家的门</p><h2 id="forestTitle">一片森林，<em>住满了歪故事。</em></h2><p>童话里的熟面孔，现在都是隔壁邻居。<br>借一辆车、买一根木头，就能把另一家的日子搅乱。</p></div>
+      <div class="atlas-frame reveal">
+        <div class="frame-corner top-left" aria-hidden="true"></div><div class="frame-corner top-right" aria-hidden="true"></div><div class="frame-corner bottom-left" aria-hidden="true"></div><div class="frame-corner bottom-right" aria-hidden="true"></div>
+        <div class="atlas" id="forestAtlas"><img src="assets/p01-world-hero-banner-v03.jpg" alt="大黑森林全景，点击六处亮灯的地方串门" width="1672" height="941" loading="lazy"><div class="atlas-vignette"></div><div id="mapPins" class="map-pins"></div><span class="atlas-compass" aria-hidden="true">✧<small>大黑森林</small></span></div>
+        <div class="atlas-caption"><span><svg aria-hidden="true"><use href="#i-pin"/></svg>点一盏灯，去谁家坐坐。</span><small>走错门，也算串门。</small></div>
+      </div>
+      <div class="destination-list reveal" id="destinationList" aria-label="森林里的六处地点"></div>
+    </section>
+
+    <div class="ornament-divider" aria-hidden="true"><span></span><svg><use href="#i-star"/></svg><span></span></div>
+
+    <section class="residents-section section" id="residents" aria-labelledby="residentsTitle">
+      <div class="section-heading-row reveal"><div><p class="eyebrow">第二章 · 都是熟面孔</p><h2 id="residentsTitle">这届童话人物，<br><em>有自己的活法。</em></h2></div><p>脸是认得的，脾气得重新认识。<br>点开一位，听听他那套歪理。</p></div>
+      <div class="residents-toolbar reveal"><div class="resident-filters" role="group" aria-label="筛选居民"><button class="active" data-filter="all" aria-pressed="true">全部街坊</button><button data-filter="band" aria-pressed="false">酒馆乐队</button><button data-filter="neighbors" aria-pressed="false">隔壁邻居</button></div><div class="rail-controls"><button class="icon-button rail-prev" id="railPrev" aria-label="查看前面的居民"><svg aria-hidden="true"><use href="#i-chevron"/></svg></button><button class="icon-button" id="railNext" aria-label="查看后面的居民"><svg aria-hidden="true"><use href="#i-chevron"/></svg></button></div></div>
+      <div class="residents-rail" id="residentsRail" aria-label="居民人物卡"></div>
+      <div class="rail-footer"><span id="residentCount" aria-live="polite">十二组街坊，各有各的算盘。</span><small>横着翻一翻，还有邻居没露面。</small></div>
+    </section>
+
+    <section class="tavern-section" id="tavern" aria-labelledby="tavernTitle">
+      <div class="tavern-shell reveal"><button class="tavern-portal" data-open-tavern aria-label="推门进入掉毛酒馆，翻看黑胶与磁带"><img src="assets/s07-tavern-interior-v03.jpg" alt="掉毛酒馆里，唱片箱放在前景，左边是乐队舞台，右边雕老板正在调酒" width="1672" height="941" loading="lazy"><span class="tavern-portal-shade"></span><span class="tavern-door-hint"><svg aria-hidden="true"><use href="#i-arrow"/></svg><span>推门进来</span></span></button>
+        <div class="tavern-copy"><p class="eyebrow"><span class="live-dot"></span>第三章 · 今晚照常掉毛</p><h2 id="tavernTitle">掉毛酒馆</h2><p class="tavern-slogan">酒里有毛？<br>老板说，这是鸡尾酒。</p><p class="tavern-description">白天互相算计，晚上凑桌听歌。<br>吧台那箱黑胶和磁带，已经放好了。</p><button class="button button-gold" data-open-tavern>翻翻酒馆唱片架<svg aria-hidden="true"><use href="#i-arrow"/></svg></button><span class="tavern-fineprint">首张唱片：《做人别忘本，狼也别忘形》</span></div>
+        <img class="cocktail-cutout" src="assets/d01-feather-cocktail-v03.png" alt="杯里插着雕老板尾羽的鸡尾酒" width="1312" height="1199" loading="lazy"><div class="tavern-stamp" aria-hidden="true">现掉<br>现调</div>
+      </div>
+    </section>
+
+    <section class="rumors-section section" id="rumors" aria-labelledby="rumorsTitle"><div class="chapter-heading reveal"><p class="eyebrow">第四章 · 别说是我说的</p><h2 id="rumorsTitle">最近，林子里<em>不太消停。</em></h2><p>好端端的童话，怎么传着传着就变味了。</p></div><div class="rumor-grid" id="rumorGrid"></div></section>
+
+    <section class="world-section section" id="world" aria-labelledby="worldTitle"><div class="world-spread reveal"><button class="world-poster-button" id="openWorldPoster" aria-label="放大黑童话世界群像海报"><img src="assets/p02-world-ensemble-poster-v03.jpg" alt="黑童话世界七位居民的群像海报" width="1024" height="1536" loading="lazy"><span>林口合影 · 点开看看</span></button><div class="world-book"><p class="eyebrow">林间生活手册 · 随手翻翻</p><h2 id="worldTitle">在这里住久了，<br><em>你就懂了。</em></h2><div class="world-rules" id="worldRules"></div><p class="book-postscript">故事还长。新的邻居，已经在来的路上。</p><svg class="book-feather" aria-hidden="true"><use href="#i-feather"/></svg></div></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><svg aria-hidden="true"><use href="#i-feather"/></svg><span><strong>黑童话世界</strong><small>童话散场以后，邻居照常过日子。</small></span></a><div class="footer-links"><button data-open-tavern>去酒馆坐坐</button><a href="#home">回到林口 ↑</a></div><p>大黑森林 · 故事还在生长</p></footer>
+
+  <dialog id="sceneDialog" class="forest-dialog scene-dialog" aria-labelledby="sceneDialogTitle"><button class="dialog-close icon-button" data-close-dialog aria-label="关上这扇门"><svg aria-hidden="true"><use href="#i-close"/></svg></button><img id="sceneDialogImage" class="scene-dialog-image" src="assets/s01-forest-street-v03.jpg" alt=""><div class="scene-dialog-copy"><p class="eyebrow" id="sceneDialogKicker"></p><h2 id="sceneDialogTitle"></h2><p id="sceneDialogDetail"></p><div id="sceneResidents" class="neighbor-links"></div><button class="button button-gold" id="sceneTavernButton" data-open-tavern hidden>进掉毛酒馆听一首<svg aria-hidden="true"><use href="#i-arrow"/></svg></button></div></dialog>
+
+  <dialog id="characterDialog" class="forest-dialog character-dialog" aria-labelledby="characterDialogTitle"><button class="dialog-close icon-button" data-close-dialog aria-label="合上人物故事"><svg aria-hidden="true"><use href="#i-close"/></svg></button><div class="character-dialog-layout"><div class="character-dialog-art"><img id="characterDialogImage" src="assets/c01-redhood-v03.jpg" alt=""></div><div class="character-dialog-copy"><p class="eyebrow" id="characterDialogRole"></p><h2 id="characterDialogTitle"></h2><blockquote id="characterDialogQuote"></blockquote><div class="character-tags" id="characterDialogTags"></div><p id="characterDialogIntro" class="character-intro"></p><p id="characterDialogStory"></p><div class="character-dialog-actions"><button class="text-link" id="characterPlaceButton">去他家串串门<svg aria-hidden="true"><use href="#i-arrow"/></svg></button><button class="text-link" id="nextCharacterButton">认识下一位<svg aria-hidden="true"><use href="#i-chevron"/></svg></button></div></div></div></dialog>
+
+  <dialog id="tavernDialog" class="forest-dialog tavern-dialog" aria-labelledby="tavernDialogTitle"><button class="dialog-close icon-button" data-close-dialog aria-label="离开唱片架"><svg aria-hidden="true"><use href="#i-close"/></svg></button><div class="tavern-dialog-hero"><img src="assets/s07-tavern-interior-v03.jpg" alt="暖灯下的掉毛酒馆和前景唱片箱" width="1672" height="941"><div class="tavern-dialog-heading"><p class="eyebrow">掉毛酒馆 · 吧台唱片架</p><h2 id="tavernDialogTitle">坐下，翻一张听听。</h2><p>毛可以捞出来，好歌先留下。</p></div></div><div class="record-collection"><div class="record-toolbar"><p>首张唱片，已到店。</p><div class="format-tabs" role="group" aria-label="切换收藏样式"><button class="active" data-format="vinyl" aria-pressed="true">黑胶架</button><button data-format="cassette" aria-pressed="false">磁带盒</button></div></div><div class="record-shelf" id="recordShelf" data-format="vinyl"><article class="featured-record"><a class="album-art-link" href="music/black-forest-encore/index.html" aria-label="打开做人别忘本，狼也别忘形歌曲页"><span class="vinyl-disc" aria-hidden="true"></span><img src="assets/p03-first-song-cover-v03.jpg" alt="做人别忘本，狼也别忘形首曲封面，小红帽给戴外婆帽的狼量肩宽" width="1254" height="1254" loading="lazy"><span class="cassette-window" aria-hidden="true"><i></i><i></i></span></a><div class="record-info"><p class="eyebrow">第一首 · 小红帽 × 大灰狼</p><h3>做人别忘本，<br>狼也别忘形</h3><p>一个惦记晚饭，一个惦记披肩。<br>笑脸相迎，转头开唱。</p><div class="record-actions"><a class="button button-gold" href="music/black-forest-encore/index.html">进入「黑森林不散场」<svg aria-hidden="true"><use href="#i-arrow"/></svg></a><button class="preview-button" id="previewSong"><svg aria-hidden="true"><use href="#i-play"/></svg><span>先试听一段</span></button></div></div></article><div class="coming-records"><div class="coming-record"><span aria-hidden="true">Ⅱ</span><p>下一张，谁先开口？</p><small>邻居们还在攒故事 · 敬请期待</small></div><img src="assets/d02-record-cassette-v03.png" alt="这首歌的黑胶与磁带" width="1254" height="1254" loading="lazy"></div></div><div class="audio-preview" id="audioPreview" hidden><button class="icon-button" id="audioPlayButton" aria-label="播放试听"><svg aria-hidden="true"><use href="#i-play"/></svg></button><span class="audio-name">红帽与狼 · 双向算计</span><span id="audioCurrent">0:00</span><input id="audioSeek" aria-label="试听播放进度" type="range" min="0" max="100" value="0" step="0.1"><span id="audioDuration">0:00</span><button class="icon-button" id="audioMuteButton" aria-label="静音" aria-pressed="false"><svg aria-hidden="true"><use href="#i-volume"/></svg></button></div><p class="audio-status" id="audioStatus" role="status"></p></div></dialog>
+
+  <dialog id="posterDialog" class="poster-dialog" aria-label="黑童话世界完整海报"><button class="dialog-close icon-button" data-close-dialog aria-label="收起海报"><svg aria-hidden="true"><use href="#i-close"/></svg></button><img src="assets/p02-world-ensemble-poster-v03.jpg" alt="黑童话世界完整群像海报"><a class="poster-download" href="assets/p02-world-ensemble-poster-v03.jpg" download="黑童话世界_群像海报.jpg">保存这张合影 ↓</a></dialog>
+  <audio id="songAudio" preload="none" src="music/black-forest-encore/assets/song.mp3"></audio>
+  <div class="sr-only" id="pageStatus" aria-live="polite"></div>
+  <noscript><p class="noscript-message">打开浏览器的 JavaScript，就能在森林里串门。也可以直接<a href="music/black-forest-encore/index.html">去听《做人别忘本，狼也别忘形》</a>。</p></noscript>
+</body>
+</html>
